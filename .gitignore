@@ -50,6 +50,6 @@ src/environments/environment.ts
 src/environments/environment.prod.ts
 
 # Firebase cache
-/.firebase
 .firebaserc
 firebase.json
+.firebase/
