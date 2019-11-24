@@ -6,16 +6,18 @@ import { CurrentWeatherService } from '../services/current-weather.service';
   selector: 'app-loading',
   templateUrl: './loading.component.html',
   styleUrls: ['./loading.component.scss'],
-  animations: [loadingAnimation()]
+  animations: [loadingAnimation]
 })
 export class LoadingComponent implements OnInit {
 
+  public weather$;
   protected _elements: string[] = ['#ffe5ec', '#ff80a0', '#ff2e63', '#800020', '#1a0006'];
   public elements: string[];
 
   constructor(private currentWeatherService: CurrentWeatherService) { }
 
   ngOnInit() {
+    this.weather$ = this.currentWeatherService.weather$;
     this.set();
   }
 

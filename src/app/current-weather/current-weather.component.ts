@@ -10,10 +10,11 @@ import { showUp } from '../animations/showUp.animation';
 })
 export class CurrentWeatherComponent implements OnInit {
 
+  public weather$;
   constructor(private weatherService: CurrentWeatherService) { }
 
   ngOnInit() {
-    this.weatherService.weather$.subscribe(console.log);
+    this.weather$ = this.weatherService.weather$;
   }
 
 }
