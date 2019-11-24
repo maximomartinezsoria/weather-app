@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GeolocationService } from './services/geolocation.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'weather-app';
+
+  constructor(
+    private geolocationService: GeolocationService
+    ) { }
+
+  ngOnInit(){
+  }
 }
