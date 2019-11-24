@@ -1,4 +1,5 @@
 # Weather App
+Weather app developed with Angular and OpenWeather API. Try it here: [https://weather-app-mms.web.app/](https://weather-app-mms.web.app/)
 
 ## Installation
 
